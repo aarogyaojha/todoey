@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/tasks_list.dart';
+
 class TasksScreen extends StatelessWidget {
   const TasksScreen({super.key});
 
@@ -55,14 +57,7 @@ class TasksScreen extends StatelessWidget {
                   topRight: Radius.circular(20),
                 ),
               ),
-              child: ListView(
-                children: [
-                  ListTile(
-                    title: Text("this is a task"),
-                    trailing: Checkbox(value: false, onChanged: (value) {}),
-                  ),
-                ],
-              ),
+              child: TasksList(),
             ),
           ),
         ],
